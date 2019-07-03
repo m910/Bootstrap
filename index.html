@@ -8,7 +8,7 @@
   <meta name="keywords" content="HTML, CSS,JavaScript">
   <meta name="description" content="Bootstrap website">
   <title></title>
-    
+
   <!--style sheet to use social media links-->
 
   <script src="https://kit.fontawesome.com/967343c785.js"></script>
@@ -21,119 +21,83 @@
 </head>
 
 <body>
-  <header>
-    
 
-<!-- Navigation bar-->
-<nav class="navbar sticky-top navbar-expand-lg navbar-light ">
-    <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-      <img src="img/large (1).png" alt="Tools for gardening" width="5%" height="5%">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <!-- Navigation bar-->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" id=logo href="#"><i>Botan</i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
     </div>
+ </nav>
+  
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Images</a>
-              <a class="dropdown-item" href="#">News</a>
-              <a class="dropdown-item" href="#">Contacts</a>
-              <a class="dropdown-item" href="#">Help</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Setting</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+<section  class="container-fluid" id="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="h-50 d-block w-100" src="img/garden1.jpg" alt="First slide">
       </div>
-    </nav>
-    
-
-    <section>
-      <div class="cover">
-      <div style="background: #f2f9ee">
-          <h1>Welcome To Gardening World</h1>
-          <p>
-            All I need to know about life I learned from gardening. All the flowers of tomorrow are in the seeds of
-            today. As is the gardener so is the garden. Cares melt when you kneel in a garden.
-          </p>
-          </div>
-          </div>
-        
-  </section>
-  </header>
-  <!--Carousel-->
-  <section id="carousal">
-    <div id="carousel-home" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-home" data-slide-to="1"></li>
-        <li data-target="#carousel-home" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <img src="img/garden.jpg" alt="Tools for gardening" width="100%" height="100%">
-          <div class="carousel-caption">
-            <h3>Gardening is an art</h3>
-            <p> Garden</p>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img src="img/gardening hero 2.jpg" alt="Balcony" width="100%" height="100%">
-          <div class="carousel-caption">
-            <h3>Garden Balcony in metro city</h3>
-            <p>It feels bliss with nature</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/garden1.jpeg" alt="Backyard" width="100%" height="100%">
-          <div class="carousel-caption">
-            <h3>Making Backyard Green with Nature</h3>
-            <p>Perfect Backyard solution</p>
-          </div>
-        </div>
+      <div class="carousel-item">
+        <img class="h-50 d-block w-100" src="img/garden.jpg" alt="Second slide">
       </div>
-      <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+      <div class="carousel-item">
+        <img class="h-50 d-block w-100" src="img/Botanischer-Garten.jpg" alt="Third slide">
+      </div>
     </div>
-  </section>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</section>
 
   <!--Jumbotron-->
-  <section class="jumbtron-section">
+  <section class="jumbtron-section" id="jumbotron-item">
     <div class="jumbotron">
       <h1 class="display-6">What we do ? </h1>
       <h6>We Provide Solution For All Gardening Type</h6>
 
-<!--Modal-->
+      <!--Modal-->
 
       <button class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal"
         data-target="#mymodal">Notification</button>
@@ -163,7 +127,7 @@
     </div>
 
   </section>
-<!--Grid Section-->
+  <!--Grid Section-->
   <hr>
   <div class="container">
     <div class="row">
@@ -171,13 +135,12 @@
         <h4 class="col-title">Hotel Gardening </h4>
         <h6 class="col-subtitle">Making Place Beautiful </h6>
         <img src="img/boot2.jpg" alt="Hotel" width="100%" height="40%">
-        <article>>
-        <p>Many hotels converted from large private residences have gardens designed by famous garden designers or are
-          particularly notable for their gardens. Alternative uses have had to be found for castles, palaces,
-          monasteries, mansions and country seats which have become financially unviable as homes, and their conversion
-          into hotels has often been successful. This has led to the creation of 'garden hotels', many of which are
-          better known for their gardens than for their modern use as hotels. Examples include</p>
-          </article>
+        <article>
+          <p>Many hotels converted from large private residences have gardens designed by famous garden designers or are
+            particularly notable for their gardens. Alternative uses have had to be found for castles, palaces,
+            monasteries, mansions and country seats which have become financially unviable as homes, and their
+            conversion into hotels has often been successful.  </p>
+        </article>
       </div>
       <div class="col-sm">
         <h4 class="col-title">House Gardening </h4>
@@ -206,17 +169,23 @@
       <img class="card-img-top" src="img/boot3.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Gardening</h5>
-        <p class="card-text">Gardening is the practice of growing and cultivating plants as part of horticulture. In gardens, ornamental plants are often grown for their flowers, foliage, or overall appearance; useful plants, such as root vegetables, leaf vegetables, fruits, and herbs, are grown for consumption, for use as dyes, or for medicinal or cosmetic use. Gardening is considered by many people to be a relaxing activity.</p>
+        <p class="card-text">Gardening is the practice of growing and cultivating plants as part of horticulture. In
+          gardens, ornamental plants are often grown for their flowers, foliage, or overall appearance; useful plants,
+          such as root vegetables, leaf vegetables, fruits, and herbs, are grown for consumption, for use as dyes, or
+          for medicinal or cosmetic use. Gardening is considered by many people to be a relaxing activity.</p>
       </div>
       <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top" src="img/botanical-garden hero4. jpg" alt="Card image cap">
+      <img class="card-img-top" src="img/card4.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Gardening</h5>
-        <p class="card-text">Gardening is the practice of growing and cultivating plants as part of horticulture. In gardens, ornamental plants are often grown for their flowers, foliage, or overall appearance; useful plants, such as root vegetables, leaf vegetables, fruits, and herbs, are grown for consumption, for use as dyes, or for medicinal or cosmetic use. Gardening is considered by many people to be a relaxing activity.</p>
+        <p class="card-text">Gardening is the practice of growing and cultivating plants as part of horticulture. In
+          gardens, ornamental plants are often grown for their flowers, foliage, or overall appearance; useful plants,
+          such as root vegetables, leaf vegetables, fruits, and herbs, are grown for consumption, for use as dyes, or
+          for medicinal or cosmetic use. Gardening is considered by many people to be a relaxing activity.</p>
       </div>
       <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
@@ -226,7 +195,10 @@
       <img class="card-img-top" src="img/card5.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Gardening</h5>
-        <p class="card-text">Gardening is the practice of growing and cultivating plants as part of horticulture. In gardens, ornamental plants are often grown for their flowers, foliage, or overall appearance; useful plants, such as root vegetables, leaf vegetables, fruits, and herbs, are grown for consumption, for use as dyes, or for medicinal or cosmetic use. Gardening is considered by many people to be a relaxing activity.</p>
+        <p class="card-text">Gardening is the practice of growing and cultivating plants as part of horticulture. In
+          gardens, ornamental plants are often grown for their flowers, foliage, or overall appearance; useful plants,
+          such as root vegetables, leaf vegetables, fruits, and herbs, are grown for consumption, for use as dyes, or
+          for medicinal or cosmetic use. Gardening is considered by many people to be a relaxing activity.</p>
       </div>
       <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
